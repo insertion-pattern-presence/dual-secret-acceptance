@@ -1,0 +1,88 @@
+Technical Overview
+Abstract
+
+Dual Secret Acceptance (DSA) is a method for authorizing actions by requiring the acceptance of two independent secrets residing on the same device. The method emphasizes intentional separation of secrets while maintaining shared device custody.
+
+This document provides a technical overview of the DSA method and its relationship to existing authorization paradigms.
+
+1. Problem Statement
+
+Single-secret authorization models are vulnerable to disclosure, replay, coercion, or misuse.
+
+DSA explores whether requiring two independent acceptances on the same device can meaningfully reduce these risks without introducing excessive user friction.
+
+2. Core Concept
+
+DSA defines authorization as the intersection of two satisfied secrets.
+
+Each secret may differ in:
+
+Origin
+
+Storage location
+
+Activation method
+
+Temporal behavior
+
+The key requirement is independence, not symmetry.
+
+3. Acceptance Model (Illustrative)
+
+An example acceptance flow may include:
+
+Secret A: hardware-backed or firmware-resident
+
+Secret B: derived through local interaction or context
+
+Authorization succeeds only when both are valid.
+
+[ADD COMMENT: Acceptance models are illustrative and not prescriptive.]
+
+4. Security Properties
+
+DSA provides:
+
+Resistance to single-point compromise
+
+Reduced reliance on user memory
+
+Local-only authorization capability
+
+Compatibility with hardware-isolated secrets
+
+DSA does not claim to replace cryptographic verification, but to structure how secrets are jointly required.
+
+5. Relationship to Existing Systems
+
+DSA is conceptually compatible with:
+
+Hardware security modules
+
+Passkey systems
+
+Presence-based signals (e.g., IPP)
+
+DSA differs by focusing on dual acceptance under shared custody, rather than multiple external factors.
+
+6. Implementation Notes
+
+Possible implementations may involve:
+
+Deterministic state machines
+
+Hardware-backed key storage
+
+Local acceptance orchestration
+
+Specific implementations are intentionally left open.
+
+7. Status
+
+This document describes an early-stage method concept.
+No claims of compliance, interoperability, or certification are made.
+
+8. Attribution
+
+Concept originated by lowc (T00LA1D).
+Method development powered by Siren intelligence.
