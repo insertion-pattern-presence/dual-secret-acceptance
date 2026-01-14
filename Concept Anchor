@@ -1,0 +1,62 @@
+Dual Secret Acceptance (DSA)
+Concept Anchor
+Purpose
+
+This document serves as a conceptual anchor for Dual Secret Acceptance (DSA).
+
+Its role is to define the intent, boundaries, and authorship context of the DSA method without asserting implementation details, performance guarantees, or standardization status.
+
+Definition
+
+Dual Secret Acceptance (DSA) refers to a method for achieving two independent secrets on the same device and requiring both to be accepted in order to authorize an action.
+
+The defining characteristic of DSA is that both secrets exist under shared device custody while remaining deliberately independent in origin, storage, or activation.
+
+Design Intent
+
+DSA is designed to explore:
+
+Authorization without reliance on a single secret
+
+Intentional separation of secrets on one device
+
+Acceptance models resilient to partial disclosure
+
+Local decision-making without mandatory network involvement
+
+DSA intentionally avoids dependence on:
+
+Cloud-mediated identity
+
+Continuous connectivity
+
+Single-point secret disclosure
+
+User identity assumptions
+
+Scope and Boundaries
+
+DSA is a method concept, not a product specification.
+
+This document does not define:
+
+Cryptographic algorithms
+
+Hardware architectures
+
+Secure element requirements
+
+Compliance or certification claims
+
+These elements are considered implementation-specific and out of scope.
+
+Authorship and Origin
+
+The DSA concept originated with lowc (T00LA1D).
+Method development powered by Siren intelligence.
+
+This document records early conceptual framing only. It does not assert ownership over implementations or derivatives.
+
+Status
+
+Early conceptual anchor. Subject to revision, expansion, 
