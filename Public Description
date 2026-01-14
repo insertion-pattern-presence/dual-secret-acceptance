@@ -1,0 +1,69 @@
+Dual Secret Acceptance (DSA)
+Public Description
+Overview
+
+Dual Secret Acceptance (DSA) is a method for authorizing actions by requiring two independent secrets to be accepted on the same device.
+
+Rather than relying on a single password, factor, or approval step, DSA ensures that no single secret—by itself—can complete an authorization.
+
+What Problem DSA Addresses
+
+Many systems rely on one decisive credential or action. If that single element is compromised, authorization collapses.
+
+DSA explores a different approach:
+
+Two secrets
+
+One device
+
+Both must be satisfied
+
+This reduces risk from partial compromise, coercion, or accidental disclosure.
+
+How DSA Works (Conceptually)
+
+DSA separates acceptance into two distinct requirements.
+
+Examples may include:
+
+A cryptographic secret and a physical interaction
+
+A stored key and a timing-based action
+
+A hardware-bound secret and a locally derived signal
+
+Authorization occurs only when both secrets are accepted.
+
+[ADD COMMENT: Examples are illustrative only; implementations may vary widely.]
+
+What DSA Is (and Is Not)
+
+DSA is:
+
+A method for authorization
+
+Device-centric
+
+Compatible with other security systems
+
+DSA is not:
+
+A password replacement by itself
+
+A biometric system
+
+A network identity service
+
+Example Applications
+
+Hardware security devices
+
+High-risk authorization workflows
+
+Local-only approval systems
+
+Systems requiring resilience to partial compromise
+
+Status
+
+Dual Secret Acceptance is an early-stage method under exploration.
